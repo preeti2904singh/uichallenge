@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Title Page</title>
+	<link rel="stylesheet" href="style.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<nav class="navbar navbar-default navbar-static-top custom_nav">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand custom_brand" href="#">
+				<img src="../images/logo.png" class="logo_img" alt="">
+			</a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown ">
+					<a href="#" class="dropdown-toggle dropdownBg" data-toggle="dropdown" role="button" aria-expanded="false">
+						Account
+						<span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li class=""><a href="#">USER</a></li>
+						<li class="divider"></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid leftSpacePadd">
+    <div class="row headerBg">
+        <div class="col-md-12">
+            <h4 class="headerTxt">Menu</h4>
+        </div>
+    </div>
+	<div class="row heightWrap rowBg">
+		<div class="col-md-1 col-xs-4 col-sm-4 paddSpace">
+			<ul class="nav nav-tabs left_nav heightWrap">
+				<li class="marginSpace"><a data-toggle="tab" href="#menu1"><i class="fa fa-circle-thin" aria-hidden="true"></i></a></li>
+				<li class="marginSpace"><a data-toggle="tab" href="#menu2"><i class="fa fa-toggle-off" aria-hidden="true"></i></a></li>
+				<li class="marginSpace"><a data-toggle="tab" href="#menu3"><i class="fa fa-file-text" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+		<div class="col-md-11 col-xs-8 col-sm-8">
+			<div class="tab-content contentHeight">
+				<div id="menu1" class="tab-pane fade in active">
+                    <h2 class="centerAlignedTxt">Progress Animation CSS3</h2>
+                    <div class="progressionbar">
+                        <ul>
+                            <li class="line1">
+                                <div class="circle_one">
+                                    <span class="icon-gift first"><i class="fa fa-gift" aria-hidden="true"></i></span>
+                                </div>
+                            </li>
+                            <li class="line2">
+                                <div class="circle_two">
+                                    <span class="icon-truck2 second"><i class="fa fa-truck" aria-hidden="true"></i> </span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="circle_three">
+                                    <span class="icon-profile-male third"><i class="fa fa-user-o" aria-hidden="true"></i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<div id="menu2" class="tab-pane fade">
+					<div class="marginSpace">
+                        <h2 class="centerAlignedTxt">Toggle Switch</h2>
+                        <input type="checkbox" id="toggle-button-css">
+                        <label for="toggle-button-css" class="toggle-button toggle-button-css">
+                            <div class="item on">&#8457;</div>
+                            <div class="item off">&#8451;</div>
+                            <div class="slider">
+                                <div class="verticalLine">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                    <div>
+                        <h2 class="centerAlignedTxt">OnHover Button Active</h2>
+                        <ul class="buttonActive">
+                            <li>
+                                <div class="circle yellow"></div><div class="yellowLine"></div>
+                                <p>Button 1</p>
+                            </li>
+                            <li>
+                                <div class="circle blue"></div><div class="blueLine"></div>
+                                <p>Button 2</p>
+                            </li>
+                            <li>
+                                <div class="circle turquoise "></div><div class="turquoiseLine"></div>
+                                <p>Button 3</p>
+                            </li>
+                            <li>
+                                <div class="circle blezieHole"></div><div class="blezieHoleLine"></div>
+                                <p>Button 4</p>
+                            </li>
+                            <li>
+                                <div class="dotted innerCircle"></div>
+                                <p>Button 5</p>
+                            </li>
+                        </ul>
+                    </div>
+				</div>
+				<div id="menu3" class="tab-pane fade">
+                    <h2 class="centerAlignedTxt">Checklist</h2>
+                    <ul class="list-group customListGroup">
+                        <li class="listGroupitem">
+                            <a href="#">
+                                <div class="flexContainer">
+                                    <p>Lorem ipsum dolor</p>
+                                    <div class="iconWrap">
+                                        <span class="iconStyle"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-download" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="listGroupitem">
+                            <a href="#">
+                                <div class="flexContainer">
+                                    <p>Lorem ipsum dolor</p>
+                                    <div class="iconWrap">
+                                        <span class="iconStyle"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-download" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="listGroupitem">
+                            <a href="#">
+                                <div class="flexContainer">
+                                    <p>Lorem ipsum dolor</p>
+                                    <div class="iconWrap">
+                                        <span class="iconStyle"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-download" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="listGroupitem">
+                            <a href="#">
+                                <div class="flexContainer">
+                                    <p>Lorem ipsum dolor</p>
+                                    <div class="iconWrap">
+                                        <span class="iconStyle"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-download" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="listGroupitem">
+                            <a href="#">
+                                <div class="flexContainer">
+                                    <p>Lorem ipsum dolor</p>
+                                    <div class="iconWrap">
+                                        <span class="iconStyle"><i class="fa fa-eye" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-share-alt" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-download" aria-hidden="true"></i></span>
+                                        <span class="iconStyle"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</div>
+</div>
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+</body>
+</html>

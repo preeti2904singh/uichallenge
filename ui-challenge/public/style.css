@@ -1,0 +1,562 @@
+body, *, .toggle-button, ul.buttonActive, ul.buttonActive li, .progressionbar{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav.custom_nav {
+    margin-bottom: 0;
+    border: 0;
+}
+
+nav.custom_nav,
+input:checked ~ .toggle-button-css, .toggle-button, .flexContainer p:hover, .iconStyle:hover {
+    background: #1abc9c;
+}
+
+nav.custom_nav,
+a.navbar-brand.custom_brand,
+a.navbar-brand.custom_brand:hover,
+.headerBg {
+    height: 70px;
+}
+
+a.navbar-brand.custom_brand,
+a.navbar-brand.custom_brand:hover{
+    background: #34495e;
+    padding: 18px 10px;
+}
+
+.logo_img{
+    width: 70px;
+    position: relative;
+    bottom: 6px;
+}
+
+a.navbar-brand.custom_brand,
+a.navbar-brand.custom_brand:hover,
+.left_nav, .toggle-button {
+    width: 100px;
+}
+
+.left_nav,
+.headerBg {
+    background: #2c3e50;
+}
+
+.paddSpace{
+    padding: 0;
+}
+
+.container-fluid.leftSpacePadd{
+    padding-left: 0;
+}
+
+h4.headerTxt, ul.nav.nav-tabs.left_nav li a, .toggle-button, .flexContainer p:hover, .iconStyle:hover {
+    color: #fff;
+}
+
+ul.nav.nav-tabs.left_nav li{
+    font-size: 30px;
+}
+
+h4.headerTxt {
+    line-height: 70px;
+    margin: 0 20px;
+
+}
+
+h4.headerTxt, .toggle-button {
+    font-weight: 100;
+}
+
+ul.nav.nav-tabs.left_nav li, div#menu2, ul.buttonActive, div#menu3, .flexContainer, #menu1, .progressionbar ul  {
+    width: 100%;
+}
+
+ul.nav.nav-tabs.left_nav li,
+.centerAlignedTxt, .toggle-button, ul.buttonActive li, .progressionbar ul {
+    text-align: center;
+}
+
+ul.nav.nav-tabs.left_nav>li.active a,
+ul.nav.nav-tabs.left_nav>li:hover a,
+ul.nav.nav-tabs.left_nav>li:focus a{
+    color: #1abc9c;
+    background-color: transparent;
+    border: 0;
+}
+
+a.dropdown-toggle.dropdownBg {
+    line-height: 40px;
+    color: #fff !important;
+}
+
+.rowbg{
+    background: #ecf0f1;
+}
+
+.heightWrap{
+    height: 630px;
+}
+
+li.marginSpace:nth-child(1){
+    margin-top: 20px;
+}
+
+li.marginSpace:nth-child(n), .marginSpace{
+    margin-bottom: 40px;
+}
+
+.centerAlignedTxt {
+    font-weight: 300;
+}
+
+.centerAlignedTxt, li.listGroupitem a {
+    color: #2c3e50;
+}
+
+.contentHeight {
+    height: 600px;
+}
+
+.contentHeight, .toggle-button {
+    display: flex;
+}
+
+.contentHeight, .toggle-button, ul.buttonActive {
+    align-items: center;
+    justify-content: center;
+}
+
+/*Checkout Css Starts*/
+
+.progressionbar {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.progressionbar ul li {
+    width: 33.3333%;
+}
+
+.progressionbar ul li span i {
+    font-size: 50px;
+}
+
+.circle_one, .circle_two, .circle_three {
+    width: 100px;
+    height: 100px;
+    line-height: 9;
+    border: 1px solid #2c3e50;
+    border-radius: 100%;
+    cursor: pointer;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.progressionbar ul li:after{
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 4px;
+    background-color: #2c3e50;
+    top: 50%;
+    left: 70%;
+    z-index: -1
+}
+
+.progressionbar ul li:nth-child(3):after{
+    display: none;
+}
+
+.circle_one{
+    animation-duration: 10s;
+    animation-name: scaleOne;
+    animation-iteration-count: infinite;
+    animation-delay:2s;
+}
+.circle_one+li::after{
+    animation-duration: 10s;
+    animation-name: bgEffectOne;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+}
+.circle_two{
+    animation-duration: 10s;
+    animation-name: scaleTwo;
+    animation-iteration-count: infinite;
+    animation-delay:2s;
+
+}
+.circle_two+li::after{
+     animation-duration: 10s;
+     animation-name: bgEffectTwo;
+     animation-iteration-count: infinite;
+     animation-delay:2s;
+ }
+.circle_three{
+    animation-name: scaleThree;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+}
+
+.line1::after{
+    animation-duration: 10s;
+    animation-name: bgEffectOne;
+    animation-iteration-count: infinite;
+    animation-delay:2s;
+}
+.line2::after{
+     animation-duration: 10s;
+     animation-name: bgEffectTwo;
+     animation-iteration-count: infinite;
+     animation-delay:2s;
+ }
+/*.progressionbar li:first-child:after{*/
+    /*content: none;*/
+    /*left: 43%;*/
+/*}*/
+@-webkit-keyframes bgEffectOne {
+    0% {
+        background: #2c3e50;
+    }
+    100% {
+        background: #f1c40f;
+    }
+
+}
+@-webkit-keyframes bgEffectTwo {
+     0% {
+         background: #2c3e50;
+     }
+     100% {
+         background: #f1c40f;
+     }
+}
+@-webkit-keyframes scaleOne {
+    0% {
+        transform: scale(1);
+        background: #fff;
+    }
+    12% {
+        transform: scale(1.2);
+    }
+    20% {
+        transform: scale(1);
+        background: #f1c40f;
+        border: 1px solid #f1c40f;
+        color: #fff;
+    }
+    100% {
+        transform: scale(1);
+        background: #f1c40f;
+        border: 1px solid #f1c40f;
+        color: #fff;
+    }}
+@-webkit-keyframes scaleTwo {
+    0% {
+        transform: scale(1);
+        background: #fff;
+    }
+    29% {
+        transform: scale(1);
+        background: #fff;
+    }
+    30% {
+        transform: scale(1.1);
+        background: #fff;
+    }
+    42% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+        background: #f1c40f;
+        border: 1px solid #f1c40f;
+        color: #fff;
+    }}
+
+@-webkit-keyframes scaleThree {
+    0% {
+        transform: scale(1);
+        background: #fff;
+    }
+    59% {
+        transform: scale(1);
+        background: #fff;
+    }
+    60% {
+        transform: scale(1.08);
+    }
+    72% {
+        transform: scale(1.2);
+    }
+    80% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
+        background: #f1c40f;
+        border: 1px solid #f1c40f;
+        color: #fff;
+    }}
+/*Checkout Css Ends*/
+
+/*Toggle Button Css Starts*/
+.toggle-button{
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-radius: 4px;
+    width: 90px;
+}
+.item{
+    width: 50%;
+}
+.slider{
+    width: 30px;
+    height: 30px;
+    background: #2c3e50;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+input:checked ~ .toggle-button-css .slider{
+    transform: translatex(50px);
+}
+label,
+.slider{
+    transition: all 0.3s cubic-bezier(0.66, 0.07, 0.58, 1)
+}
+input{
+    display: none;
+}
+.toggle-button-css{
+    cursor : pointer;
+}
+
+.verticalLine{
+    transform: rotate(90deg);
+}
+
+.verticalLine div{
+    width: 24px;
+    height: 2px;
+    background: rgba(230, 126, 34, 0.44);
+    position: relative;
+    left: -3px;
+    margin: 6px;
+}
+/*Toggle Button Css Ends*/
+
+/*Button Active onHover css starts*/
+
+ul.buttonActive, .progressionbar ul {
+    list-style: none;
+}
+
+ul.buttonActive, .flexContainer, .progressionbar ul {
+    display: inline-flex;
+}
+
+ul.buttonActive li {
+    width: 20%;
+}
+
+.circle, .dotted {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0px auto 20px;
+    cursor: pointer;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.yellow, .yellowLine:after {
+    background: #f1c40f;
+}
+
+.blue, .blueLine:after {
+    background: #3498db;
+}
+
+.turquoise, .turquoiseLine:after {
+    background: #1abc9c;
+}
+
+.blezieHole, .blezieHoleLine:after {
+    background: #2980b9;
+}
+
+.dotted{
+    border: 3px dotted #2c3e50;
+    background: #fff;
+}
+
+ul.buttonActive li:nth-child(1):hover {
+    color: #f1c40f;
+}
+
+ul.buttonActive li:nth-child(2):hover {
+    color: #3498db;
+}
+
+ul.buttonActive li:nth-child(3):hover {
+    color: #1abc9c;
+}
+
+ul.buttonActive li:nth-child(4):hover {
+    color: #2980b9;
+}
+
+ul.buttonActive li:nth-child(5):hover {
+    color: #34495e;
+}
+
+.yellowLine, .blezieHoleLine, .blueLine, .turquoiseLine {
+    position: absolute;
+    top: 0;
+    left: 55%;
+}
+
+.yellowLine:after, .blezieHoleLine:after, .blueLine:after, .turquoiseLine:after{
+    display: block;
+    position: absolute;
+    top: 20px;
+    width: 240px;
+    height: 3px;
+    content: '';
+    z-index: -1;
+    left: 0;
+}
+
+.circle:hover, .dotted:hover, .dotted.innerCircle:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.circle:after:hover{
+    -moz-transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+}
+
+.dotted.innerCircle:hover{
+    background-color: #2c3e50;
+    border: 1px dotted #2c3e50;
+    box-shadow: inset 0 0 0 10px #fff;
+}
+
+/*Button Active onHover css ends*/
+
+/*Checklist Css Starts*/
+ul.customListGroup {
+    border: 1px solid #ddd;
+    padding: 20px;
+    list-style: none;
+    border-radius: 20px;
+    width: 40%;
+    margin: 0 auto;
+    background: #fff;
+}
+
+li.listGroupitem {
+    height: 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+
+li.listGroupitem:nth-child(5) {
+    border-bottom: 0;
+}
+
+.flexContainer{
+    justify-content: space-between;
+}
+
+.flexContainer p{
+    width: 60%;
+}
+
+.flexContainer .iconWrap{
+    width: 40%;
+}
+
+.flexContainer p, .iconStyle {
+    line-height: 50px;
+}
+
+span.iconStyle {
+    font-size: 20px;
+    height: 50px;
+    padding: 13px 12px;
+}
+
+li.listGroupitem a:hover, li.listGroupitem a:active, li.listGroupitem a:focus {
+    text-decoration: none;
+}
+
+li.listGroupitem a:active, li.listGroupitem a:focus {
+    color: #f39c12 !important;
+}
+/*Checklist Css Ends*/
+
+/*Media Queries*/
+@media only screen and (min-width: 320px) and (max-width: 767px){
+    .contentHeight {
+        height: auto;
+    }
+
+    ul.customListGroup {
+        padding: 0;
+        width: 100%;
+    }
+
+    li.listGroupitem {
+        height: auto;
+    }
+
+    .progressionbar {
+        width: 100%;
+    }
+
+    .circle_one, .circle_two, .circle_three {
+        width: 50px;
+        height: 50px;
+        line-height: 4;
+    }
+
+    .progressionbar ul li span i {
+        font-size: 20px;
+    }
+
+    .circle, .dotted {
+        width: 20px;
+        height: 20px;
+    }
+
+    .yellowLine:after, .blezieHoleLine:after, .blueLine:after, .turquoiseLine:after {
+        top: 10px;
+        width: 44px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .flexContainer p, .flexContainer .iconWrap {
+        width: auto;
+    }
+    .yellowLine:after, .blezieHoleLine:after, .blueLine:after, .turquoiseLine:after {
+        width: 170px;
+    }
+}
